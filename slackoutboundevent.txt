@@ -1,0 +1,80 @@
+ {
+[1]     "token": "evWEkqKTvyXOmSyQZ77pfRxI",
+[1]     "team_id": "T031NJ21ASJ",
+[1]     "api_app_id": "A031SAWFG3X",
+[1]     "event": {
+[1]         "type": "message",
+[1]         "text": "sending messsage fs with attachment",
+[1]         "files": [
+[1]             {
+[1]                 "id": "F031VH3GGBV",
+[1]                 "created": 1644192403,
+[1]                 "timestamp": 1644192403,
+[1]                 "name": "upwork-socket.io-horizontal.drawio.pdf",
+[1]                 "title": "upwork-socket.io-horizontal.drawio.pdf",
+[1]                 "mimetype": "application/pdf",
+[1]                 "filetype": "pdf",
+[1]                 "pretty_type": "PDF",
+[1]                 "user": "U032K0RK1S4",
+[1]                 "editable": false,
+[1]                 "size": 97853,
+[1]                 "mode": "hosted",
+[1]                 "is_external": false,
+[1]                 "external_type": "",
+[1]                 "is_public": true,
+[1]                 "public_url_shared": false,
+[1]                 "display_as_bot": false,
+[1]                 "username": "",
+[1]                 "url_private": "https://files.slack.com/files-pri/T031NJ21ASJ-F031VH3GGBV/upwork-socket.io-horizontal.drawio.pdf",
+[1]                 "url_private_download": "https://files.slack.com/files-pri/T031NJ21ASJ-F031VH3GGBV/download/upwork-socket.io-horizontal.drawio.pdf",
+[1]                 "media_display_type": "unknown",
+[1]                 "thumb_pdf": "https://files.slack.com/files-tmb/T031NJ21ASJ-F031VH3GGBV-e615417879/upwork-socket.io-horizontal.drawio_thumb_pdf.png",        
+[1]                 "thumb_pdf_w": 1046,
+[1]                 "thumb_pdf_h": 1389,
+[1]                 "permalink": "https://flowroute-test.slack.com/files/U032K0RK1S4/F031VH3GGBV/upwork-socket.io-horizontal.drawio.pdf",
+[1]                 "permalink_public": "https://slack-files.com/T031NJ21ASJ-F031VH3GGBV-58460131f0",
+[1]                 "has_rich_preview": false
+[1]             }
+[1]         ],
+[1]         "upload": false,
+[1]         "user": "U032K0RK1S4",
+[1]         "display_as_bot": false,
+[1]         "ts": "1644192432.411209",
+[1]         "blocks": [
+[1]             {
+[1]                 "type": "rich_text",
+[1]                 "block_id": "m9h",
+[1]                 "elements": [
+[1]                     {
+[1]                         "type": "rich_text_section",
+[1]                         "elements": [
+[1]                             {
+[1]                                 "type": "text",
+[1]                                 "text": "sending messsage fs with attachment"
+[1]                             }
+[1]                         ]
+[1]                     }
+[1]                 ]
+[1]             }
+[1]         ],
+[1]         "client_msg_id": "3087436e-e9c5-457d-9a60-b2ba27bd7b8d",
+[1]         "channel": "C031ERTNY6B",
+[1]         "subtype": "file_share",
+[1]         "event_ts": "1644192432.411209",
+[1]         "channel_type": "channel"
+[1]     },
+[1]     "type": "event_callback",
+[1]     "event_id": "Ev031VGJ5EJW",
+[1]     "event_time": 1644192432,
+[1]     "authorizations": [
+[1]         {
+[1]             "enterprise_id": null,
+[1]             "team_id": "T031NJ21ASJ",
+[1]             "user_id": "U032K0RK1S4",
+[1]             "is_bot": false,
+[1]             "is_enterprise_install": false
+[1]         }
+[1]     ],
+[1]     "is_ext_shared_channel": false,
+[1]     "event_context": "4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDMxTkoyMUFTSiIsImFpZCI6IkEwMzFTQVdGRzNYIiwiY2lkIjoiQzAzMUVSVE5ZNkIifQ"
+[1] }

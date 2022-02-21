@@ -1,0 +1,68 @@
+SMS
+
+   "data": {
+     "attributes": {
+       "amount_display": "$0.0040",
+       "amount_nanodollars": "4000000",
+       "body": "Testing Message from Ngrok to tunnel for flowroute",
+       "direction": "inbound",
+       "from": "12018172450",
+       "is_mms": false,
+       "message_callback_url": "https://5993-45-198-6-103.ngrok.io/api/test_sms_inbound",
+       "message_encoding": 0,
+       "message_type": "longcode",
+       "status": "delivered",
+       "timestamp": "2022-02-06T17:52:33Z",
+       "to": 16085612999
+     },
+     "type": "message",
+     "id": "mdr2-5ca00ec193834bc691acd70988428554"
+   }
+
+
+
+MMS
+ Body  {
+   "included": [
+       {
+           "attributes": {
+               "url": "https://mms-media-prod.s3.amazonaws.com/1490420351891410944-9E412262-C12F-44FA-95FF-00574C9212A1.jpg?AWSAccessKeyId=ASIA2DG5LFSOGRAC4ZOI&Expires=1646770878&x-amz-security-token=IQoJb3JpZ2luX2VjEIz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIGO6Ua3LO1f3Rz5xho5ZwHSKrlZeC2Na2XtIoBMJpDJxAiEA7Yf1AZYedIQvAp%2B5HlK3GT9kEMo06vMa5iN4Qi7xztMqtQIIxf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2OTQxMDE0MjEyMTIiDMQhfF4XPhCNLWNAiCqJAj08%2BVksPrgbkWFVoSYJwGI3XRaBUbtlpRLm7jKRFcjMJ1v9ME1Cu%2FHOnKMFaEYqZZ3dquTets1BedTTqmQhljPql0hNjDxArmyUcJ0b2O7jpU194ZIBd%2FFZIFlH2URDPtj6zKus3eM1pxSHn27fsZTc1dZAXvRD4mifEe%2BA55VV63qXFztrCMhAOHqqIYqdxw4h0cP%2F%2FP26jQuDw1MlbtLJDzvr%2F09Hx%2F5SDh6gAyLt80tuhUJKybwavDCg%2FeceLMJMdkcvD%2BbNHzuAWxAb7AhozamOfv4enYLW5GNQT1pw7SFI%2Fc7rkoX7RpE2%2FLhxcigT4XJG4%2Be9Zdtmlf7e3VOSr1qvwvX%2BpNEwndiAkAY6mgFHpoaQSNtX1EgVUfz2O4h8UrAMllspQIRTe93NOMqR%2FWnepGADsJLVUbJg%2BJSR%2FThMehYQC9Np5LpYM0Kus4Nj8aI2qG7egUsRz7wfCZZKfSh%2F%2BjIFciMog8C0i5VQQv6ddjJjxtJ8Z0%2F9NJxHR6e8uIHsRtJQXCBgkjda18YuRMxhiA1OMYqLjcGzVgOe3Gfs0ZYNjcYyxIhJ&Signature=yhpuwHLZ7LShjy6G3v3Psfjuw20%3D",
+               "file_name": "9E412262-C12F-44FA-95FF-00574C9212A1.jpg",
+               "mime_type": "image/jpeg",
+               "file_size": 58017
+           },
+           "type": "media",
+           "id": "1490420351891410944-9E412262-C12F-44FA-95FF-00574C9212A1.jpg",
+           "links": {
+               "self": "https://api.flowroute.com/v2.1/media/1490420351891410944-9E412262-C12F-44FA-95FF-00574C9212A1.jpg"
+           }
+       }
+   ],
+   "data": {
+       "relationships": {
+           "media": {
+               "data": [
+                   {
+                       "type": "media",
+                       "id": "1490420351891410944-9E412262-C12F-44FA-95FF-00574C9212A1.jpg"
+                   }
+               ]
+           }
+       },
+       "attributes": {
+           "status": "",
+           "body": "stringified rsponse",
+           "direction": "inbound",
+           "amount_nanodollars": 9500000,
+           "to": "16085612999",
+           "message_encoding": 0,
+           "timestamp": "2022-02-06T20:21:17.00Z",
+           "delivery_receipts": [],
+           "amount_display": "$0.0095",
+           "from": "18337061641",
+           "is_mms": true,
+           "message_type": "longcode"
+       },
+       "type": "message",
+       "id": "mdr2-5730c97c878a11ec8008a26e9054fd5e"
+   }

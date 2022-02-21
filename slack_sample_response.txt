@@ -1,0 +1,58 @@
+  ok: true,
+  channel: 'C032K0S52QY',
+  ts: '1644177631.436489',
+  message: {
+    bot_id: 'B032K0X6PGQ',
+    type: 'message',
+    text: 'Hello World',
+    user: 'U032K0RK1S4',
+    ts: '1644177631.436489',
+    team: 'T031NJ21ASJ',
+    bot_profile: {
+      id: 'B032K0X6PGQ',
+      app_id: 'A031SAWFG3X',
+      name: 'Flowroute-SMS-MMS',
+
+
+
+  ok: true,
+  channel: {
+    id: 'C031SBTDUBF',
+    name: 'slack-testchannel',
+    is_channel: true,
+    is_group: false,
+    is_im: false,
+    is_mpim: false,
+    is_private: false,
+    created: 1644178149,
+    is_archived: false,
+    is_general: false,
+    unlinked: 0,
+    name_normalized: 'slack-testchannel',
+    is_shared: false,
+    is_org_shared: false,
+    is_pending_ext_shared: false,
+    pending_shared: [],
+    parent_conversation: null,
+    creator: 'U032K0RK1S4',
+    is_ext_shared: false,
+    shared_team_ids: [ 'T031NJ21ASJ' ],
+    pending_connected_team_ids: [],
+    is_member: true,
+    last_read: '0000000000.000000',
+    topic: { value: '', creator: '', last_set: 0 },
+    purpose: { value: '', creator: '', last_set: 0 },
+    previous_names: [],
+    priority: 0
+  },
+  response_metadata: {
+    scopes: [ 'admin', 'identify', 'channels:write', 'chat:write' ],
+    acceptedScopes: [
+      'channels:write',
+      'groups:write',
+      'mpim:write',
+      'im:write',
+      'post'
+    ]
+  }
+}
