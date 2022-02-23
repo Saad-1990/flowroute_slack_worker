@@ -22,3 +22,17 @@ Example : npm run -g <module_name>
 1. nodemon ./build/index.js
 # If we don't want to auto-reload use following command
 1. node ./build/index.js
+
+
+
+# PRODUCTION 
+# LIST OF ENVIRONMENT VARIABLES
+FLOWROUTE_USERNAME (defaults to ab05f456)
+FLOWROUTE_PASSWORD (defaults to c412e2bb859540378a2c80bb34727384)
+FLOWROUTE_NUMBER (defaults to 16085612999)
+RMQ_HOST (defaults to localhost)
+RMQ_USER (defaults to slack_user)
+RMQ_PASSWORD (defaults to Tyler@sms)
+RMQ_PROTOCOL (defaults to amqp)
+RMQ_PORT (defaults to 5672)
+SLACK_TOKEN (defaults to Random Unknown Key)

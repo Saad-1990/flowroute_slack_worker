@@ -21,9 +21,9 @@ export abstract class FlowRouteAPI {
      * @Secret_key = password
      */
 
-    static username = 'ab05f456';
-    static password = 'c412e2bb859540378a2c80bb34727384';
-    public static phone_number = '16085612999';
+    static username = '';
+    static password = '';
+    public static phone_number = '';
 
     static endpoint = 'https://api.flowroute.com';
     public static INIT(username: string, password: string, phone_number: string) {

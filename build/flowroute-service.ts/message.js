@@ -89,8 +89,8 @@ exports.FlowRouteAPI = FlowRouteAPI;
  * @Access_key = username
  * @Secret_key = password
  */
-FlowRouteAPI.username = 'ab05f456';
-FlowRouteAPI.password = 'c412e2bb859540378a2c80bb34727384';
-FlowRouteAPI.phone_number = '16085612999';
+FlowRouteAPI.username = '';
+FlowRouteAPI.password = '';
+FlowRouteAPI.phone_number = '';
 FlowRouteAPI.endpoint = 'https://api.flowroute.com';
 //# sourceMappingURL=message.js.map

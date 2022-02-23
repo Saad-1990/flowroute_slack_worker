@@ -9,6 +9,7 @@ import { HTTPServer } from "./server/http";
 import { Logger } from "./server/logger";
 import { SlackWebAPI } from "./slack/message-serrvice";
 import { RMQ } from "./server/rmq";
+import { FlowRouteAPI } from "./flowroute-service.ts/message";
 
 
 class Application {
@@ -89,10 +90,21 @@ class Application {
             await DefaultModel.INIT();
             await FlowRouteChannelsModel.INIT();
             await Messages.INIT();
-            await SlackWebAPI.INIT();
+
+            FlowRouteAPI.INIT(process.env.FLOWROUTE_USERNAME || 'ab05f456', process.env.FLOWROUTE_PASSWORD || 'c412e2bb859540378a2c80bb34727384', process.env.FLOWROUTE_NUMBER || '16085612999');
+
+            await SlackWebAPI.INIT(process.env.SLACK_TOKEN || '');
 
             this.httpServer = HTTPServer.INIT(conf);
-            await RMQ.INIT({ host : 'localhost', user : 'slack_user', password : 'Tyler@sms' , protocol : 'amqp', port : 5672 });
+            await RMQ.INIT({
+                host: process.env.RMQ_HOST || 'localhost',
+                user: process.env.RMQ_USER || 'slack_user',
+                password: process.env.RMQ_PASSWORD || 'Tyler@sms',
+                protocol: process.env.RMQ_PROTOCOL as any || 'amqp',
+                port: process.env.RMQ_PORT as any || 5672
+            });
+
+
             Object.seal(this.httpServer);
             Logger.Console('Server Started : ', 'info');
 

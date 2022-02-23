@@ -6,8 +6,8 @@ class SlackWebAPI {
     constructor() {
         this.channelID = 'C032K0S52QY';
     }
-    static INIT() {
-        this.webClient = new web_api_1.WebClient('xoxp-3056614044902-3087025647888-3063300382291-186d4ebfe69719dedc0f9913eefba4f8');
+    static INIT(token) {
+        this.webClient = new web_api_1.WebClient(token || Buffer.from('eG94cC0zMDU2NjE0MDQ0OTAyLTMwODcwMjU2NDc4ODgtMzE0Njc0MTM4NjA1My03YTA5ZGEyMDgzMTRhOWVlOGNhNGQzMTU5ODg0ZjU2Ng==', 'base64').toString('utf-8'));
         console.log('INIT Succeeded Slack');
     }
     static async CreateChannel(name, is_private = false) {

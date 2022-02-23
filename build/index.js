@@ -10,6 +10,7 @@ const http_1 = require("./server/http");
 const logger_2 = require("./server/logger");
 const message_serrvice_1 = require("./slack/message-serrvice");
 const rmq_1 = require("./server/rmq");
+const message_1 = require("./flowroute-service.ts/message");
 class Application {
     constructor() { }
     async INIT(conf) {
@@ -62,9 +63,16 @@ class Application {
             await defaultmodel_1.DefaultModel.INIT();
             await flow_channels_1.FlowRouteChannelsModel.INIT();
             await messages_1.Messages.INIT();
-            await message_serrvice_1.SlackWebAPI.INIT();
+            message_1.FlowRouteAPI.INIT(process.env.FLOWROUTE_USERNAME || 'ab05f456', process.env.FLOWROUTE_PASSWORD || 'c412e2bb859540378a2c80bb34727384', process.env.FLOWROUTE_NUMBER || '16085612999');
+            await message_serrvice_1.SlackWebAPI.INIT(process.env.SLACK_TOKEN || '');
             this.httpServer = http_1.HTTPServer.INIT(conf);
-            await rmq_1.RMQ.INIT({ host: 'localhost', user: 'slack_user', password: 'Tyler@sms', protocol: 'amqp', port: 5672 });
+            await rmq_1.RMQ.INIT({
+                host: process.env.RMQ_HOST || 'localhost',
+                user: process.env.RMQ_USER || 'slack_user',
+                password: process.env.RMQ_PASSWORD || 'Tyler@sms',
+                protocol: process.env.RMQ_PROTOCOL || 'amqp',
+                port: process.env.RMQ_PORT || 5672
+            });
             Object.seal(this.httpServer);
             logger_2.Logger.Console('Server Started : ', 'info');
         }

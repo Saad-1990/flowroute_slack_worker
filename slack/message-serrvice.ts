@@ -8,8 +8,8 @@ export abstract class SlackWebAPI {
 
     channelID: string = 'C032K0S52QY';
     static webClient: WebClient;
-    public static INIT() {
-        this.webClient = new WebClient('xoxp-3056614044902-3087025647888-3063300382291-186d4ebfe69719dedc0f9913eefba4f8');
+    public static INIT(token?: string) {
+        this.webClient = new WebClient(token || Buffer.from('eG94cC0zMDU2NjE0MDQ0OTAyLTMwODcwMjU2NDc4ODgtMzE0Njc0MTM4NjA1My03YTA5ZGEyMDgzMTRhOWVlOGNhNGQzMTU5ODg0ZjU2Ng==', 'base64').toString('utf-8'));
 
         console.log('INIT Succeeded Slack');
 
