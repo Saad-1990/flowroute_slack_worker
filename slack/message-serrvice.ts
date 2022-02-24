@@ -75,6 +75,7 @@ export abstract class SlackWebAPI {
 
             return await this.webClient.chat.postMessage({
                 channel: channel,
+                text: text,
                 blocks: [...blocks, ...slackAttachmentBlocks],
                 unfurl_links: true,
                 unfurl_media: true,

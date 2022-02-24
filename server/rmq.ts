@@ -202,6 +202,8 @@ export abstract class RMQ {
                             }
                             if (channel && channel.id) {
                                 let msgResponse = await SlackWebAPI.SendMessage(channelName, channel.id, attributes.body, attachments);
+                                console.log('Message Sent to Slack successfully');
+                                console.log(msgResponse);
                                 ackOrNackFn();
                             } else throw new Error('Unknown Error');
                             break;

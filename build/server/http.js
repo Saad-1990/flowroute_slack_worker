@@ -27,8 +27,6 @@ const express_1 = __importDefault(require("express"));
 //Global Router Imports
 const Middleware = __importStar(require("../controllers/global/middleware"));
 const AssetRouter = __importStar(require("../controllers/global/assets"));
-//API Router Imports
-const FlowrouteRouter = __importStar(require("../controllers/api/flowroute"));
 const TestRouter = __importStar(require("../controllers/api/test"));
 class HTTPServer {
     constructor(conf) {
@@ -57,7 +55,7 @@ class HTTPServer {
         this.server.app.use('/assets', AssetRouter.router);
         //Register API routes Here
         this.server.app.use('/api/test', TestRouter.router);
-        this.server.app.use('/api/flowroute', FlowrouteRouter.router);
+        // this.server.app.use('/api/flowroute', FlowrouteRouter.router);
         //Default Route Must be added at end.
         // this.server.app.use('/', DefaultRouter.router); 
     }

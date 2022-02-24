@@ -165,6 +165,8 @@ class RMQ {
                             }
                             if (channel && channel.id) {
                                 let msgResponse = await message_serrvice_1.SlackWebAPI.SendMessage(channelName, channel.id, attributes.body, attachments);
+                                console.log('Message Sent to Slack successfully');
+                                console.log(msgResponse);
                                 ackOrNackFn();
                             }
                             else
