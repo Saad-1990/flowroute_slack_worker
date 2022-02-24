@@ -43,13 +43,13 @@ class SlackWebAPI {
     static async SendMessage(channelName, channel, text, attachments = []) {
         try {
             let blocks = [];
-            blocks.push({
+            (text) ? blocks.push({
                 type: 'section',
                 text: {
-                    text: text,
+                    text: text || '',
                     type: 'plain_text'
                 }
-            });
+            }) : undefined;
             let slackAttachmentBlocks = attachments.map((attachment) => {
                 let temp = {
                     type: 'image',
@@ -60,7 +60,7 @@ class SlackWebAPI {
             });
             return await this.webClient.chat.postMessage({
                 channel: channel,
-                text: text,
+                text: text || '',
                 blocks: [...blocks, ...slackAttachmentBlocks],
                 unfurl_links: true,
                 unfurl_media: true,

@@ -54,14 +54,14 @@ export abstract class SlackWebAPI {
         try {
             let blocks: Block[] = [];
 
-            blocks.push({
+            (text) ? blocks.push({
                 type: 'section',
                 text: {
-                    text: text,
+                    text: text || '',
                     type: 'plain_text'
                 }
 
-            } as SectionBlock)
+            } as SectionBlock) : undefined;
             let slackAttachmentBlocks = attachments.map((attachment: any) => {
                 let temp: ImageBlock = {
                     type: 'image',
@@ -75,7 +75,7 @@ export abstract class SlackWebAPI {
 
             return await this.webClient.chat.postMessage({
                 channel: channel,
-                text: text,
+                text: text || '',
                 blocks: [...blocks, ...slackAttachmentBlocks],
                 unfurl_links: true,
                 unfurl_media: true,
