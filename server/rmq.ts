@@ -231,7 +231,7 @@ export abstract class RMQ {
                     }
 
                 } catch (error: any) {
-                    // console.log(error);
+                    console.log(error);
                     ackOrNackFn(new Error(JSON.stringify(payload)), [
                         { strategy: 'republish', defer: 5000, attempts: 10 },
                         { immediateNack: true, requeue: false, xDeathFix: true, strategy: 'nack' }
