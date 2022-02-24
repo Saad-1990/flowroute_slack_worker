@@ -57,7 +57,7 @@ export class HTTPServer {
         //Register API routes Here
         this.server.app.use('/api/test', TestRouter.router);
 
-        this.server.app.use('/api/flowroute', FlowrouteRouter.router);
+        // this.server.app.use('/api/flowroute', FlowrouteRouter.router);
 
 
         //Default Route Must be added at end.
